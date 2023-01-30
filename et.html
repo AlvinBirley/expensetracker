@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="tracker3.css">
+</head>
+<body>
+    <div id="container">
+        <div id="title"><h1>Expense Tracker</h1></div>
+        <div id="addItem"><h2>Add An Item:</h2></div>
+        <div id="name"><p>Name:</p><input type="text" id="val" class="required" onchange="toggleButton()"></div>
+        <div id="dateandamount"><p>Date:</p><input type="date" id="val2" class="required" onchange="toggleButton()"><p>Amount:</p><input type="number" id="val3" class="required" onkeyup="comeOn()" onchange="toggleButton()"></div>
+        <div id="buttondiv">
+        <div id="button"><button type="submit" id="press" value="clear" disabled>Add Expense</button></div>
+        <div id="buttonTwo"><button type="submit" id="pressTwo" value="clearTwo" on>Reset Fields</button></div>
+        </div>
+        <div id="space"></div>
+        <div id="threedivs">
+            <div id="name2"><p>Name</p></div>
+            <div id="date2"><p>Date</p></div>
+            <div id="amount2"><p>Amount</p></div>
+        </div>
+        <div id="greyMaster">
+            <div id="greyContainer">
+            </div>
+         </div>
+    </div>
+    <script src="tracker3.js" defer></script>
+</body>
+</html>
