@@ -27,6 +27,11 @@ document.getElementById('press').onclick = function(e){
     contentAmount.style.width = "200px";
     contentAmount.style.border = "1px solid #d3d3d3"
     contentAmount.textContent = "$" + amountValue;
+
+
+    if (!amountValue.includes(".")){
+        contentAmount.textContent = "$" + amountValue + ".00";
+    }
     everything.appendChild(contentAmount);
     let clearBtn = document.createElement("button");
     clearBtn .className ="clear"
